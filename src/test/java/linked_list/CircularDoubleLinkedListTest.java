@@ -29,8 +29,8 @@ public class CircularDoubleLinkedListTest {
         linkedList.add(10);
         linkedList.add(20);
         assertThrows(IndexOutOfBoundsException.class, () -> linkedList.getAt(-1));
-        assertEquals(linkedList.getAt(0), new Integer(10));
-        assertEquals(linkedList.getAt(1), new Integer(20));
-        assertThrows(IndexOutOfBoundsException.class, () -> linkedList.getAt(0));
+        assertEquals(Integer.valueOf(10), linkedList.getAt(0));
+        assertEquals(Integer.valueOf(20), linkedList.getAt(1));
+        assertThrows(IndexOutOfBoundsException.class, () -> linkedList.getAt(3));
     }
 }
