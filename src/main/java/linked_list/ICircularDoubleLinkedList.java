@@ -4,15 +4,15 @@ public interface ICircularDoubleLinkedList<E> extends Iterable<E> {
 
     boolean add(E value);
 
-    boolean delete(E data);
+    boolean delete(int index);
 
-    E first();
+    E head();
 
-    E last();
+    E tail();
 
     int length();
 
-    E getAt(long index);
+    E getAt(int index);
 
 
 }
