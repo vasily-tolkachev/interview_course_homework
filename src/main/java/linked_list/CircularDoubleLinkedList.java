@@ -76,12 +76,6 @@ public class CircularDoubleLinkedList<E> implements ICircularDoubleLinkedList<E>
         return x;
     }
 
-
-    @Override
-    public Iterator<E> iterator() {
-        return null;
-    }
-
     class Node<E> {
         private Node<E> previous;
         private Node<E> next;

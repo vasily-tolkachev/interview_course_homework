@@ -1,6 +1,6 @@
 package linked_list;
 
-public interface ICircularDoubleLinkedList<E> extends Iterable<E> {
+public interface ICircularDoubleLinkedList<E> {
 
     boolean add(E value);
 
@@ -13,6 +13,4 @@ public interface ICircularDoubleLinkedList<E> extends Iterable<E> {
     int length();
 
     E getAt(int index);
-
-
 }
