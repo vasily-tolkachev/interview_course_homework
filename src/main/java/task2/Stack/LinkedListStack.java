@@ -1,6 +1,6 @@
-package task2;
+package task2.Stack;
 
-public class LinkedListStack<E> implements ILinkedListStack<E> {
+public class LinkedListStack<E> implements IStack<E> {
 
     private Node<E> top;
     private int size = 0;

@@ -1,14 +1,16 @@
-package task2;
+package task2.Stack;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import task2.Stack.IStack;
+import task2.Stack.LinkedListStack;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class LinkedListStackTest {
 
-    static ILinkedListStack<Integer> stack;
+    static IStack<Integer> stack;
 
     @BeforeEach
     void beforeEach() {

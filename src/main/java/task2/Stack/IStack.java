@@ -1,6 +1,6 @@
-package task2;
+package task2.Stack;
 
-public interface ILinkedListStack<E> {
+public interface IStack<E> {
 
     E push(E item);
 
