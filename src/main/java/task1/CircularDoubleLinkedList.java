@@ -1,6 +1,4 @@
-package linked_list;
-
-import java.util.Iterator;
+package task1;
 
 public class CircularDoubleLinkedList<E> implements ICircularDoubleLinkedList<E> {
 

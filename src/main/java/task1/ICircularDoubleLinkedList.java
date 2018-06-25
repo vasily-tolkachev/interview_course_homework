@@ -1,4 +1,4 @@
-package linked_list;
+package task1;
 
 public interface ICircularDoubleLinkedList<E> {
 
