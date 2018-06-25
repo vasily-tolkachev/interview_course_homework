@@ -3,8 +3,8 @@ package task2.Stack;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import task2.Stack.IStack;
-import task2.Stack.LinkedListStack;
+
+import java.util.EmptyStackException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -30,5 +30,6 @@ public class LinkedListStackTest {
         }
         assertTrue(stack.isEmpty());
         assertEquals(0, stack.size());
+        assertThrows(EmptyStackException.class, stack::pop);
     }
 }

@@ -1,5 +1,8 @@
 package task2.Stack;
 
+import java.util.EmptyStackException;
+import java.util.Stack;
+
 public class LinkedListStack<E> implements IStack<E> {
 
     private Node<E> top;
@@ -20,6 +23,7 @@ public class LinkedListStack<E> implements IStack<E> {
 
     @Override
     public E pop() {
+        if (size == 0) { throw new EmptyStackException();}
         Node<E> topNode = top.next;
         top.next = topNode.next;
         topNode.next = null;
