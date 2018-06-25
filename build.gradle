@@ -20,4 +20,5 @@ dependencies {
 
     testRuntime 'org.junit.jupiter:junit-jupiter-engine:+'
 
+    compileOnly 'org.projectlombok:lombok:+'
 }
