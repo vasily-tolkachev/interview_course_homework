@@ -1,4 +1,4 @@
-package task2.Stack;
+package task2.stack;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
