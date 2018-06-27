@@ -7,19 +7,19 @@ import java.util.EmptyStackException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class LinkedListQueueTest {
+class TwoStackQueueTest {
     static IQueue<Integer> queue;
 
     @BeforeEach
     void beforeEach() {
-        queue = new LinkedListQueue<>();
+        queue = new TwoStackQueue<>();
         for (int i = 0; i < 10 ; i++) {
             queue.enqueue(i);
         }
     }
 
     @Test
-    public void linkedListQueueTest() {
+    public void twoStackQueueTest() {
         assertFalse(queue.isEmpty());
         assertEquals(10, queue.size());
         for (int i = 0; i < 10 ; i++) {

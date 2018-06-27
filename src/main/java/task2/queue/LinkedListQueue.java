@@ -54,17 +54,4 @@ public class LinkedListQueue<E> implements IQueue<E> {
             this.value = value;
         }
     }
-
-    @Override
-    public String toString() {
-        StringBuilder builder = new StringBuilder();
-        builder.append("[");
-        Node<E> item = first.next;
-        for (int i = 0; i < size; i++) {
-            builder.append(item.value).append(" ");
-            item = item.next;
-        }
-        builder.append("]");
-        return builder.toString();
-    }
 }
