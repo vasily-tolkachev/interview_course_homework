@@ -1,8 +1,8 @@
-package task2.balansed_staring;
+package task2.balansed_string;
 
 import lombok.NonNull;
+import task2.stack.ArrayStack;
 import task2.stack.IStack;
-import task2.stack.LinkedListStack;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,7 +20,7 @@ public class StringChecker {
 
     @NonNull
     public static boolean isStringBalanced(String string) {
-        IStack<Character> stack = new LinkedListStack<>();
+        IStack<Character> stack = new ArrayStack<>();
         char[] characters = string.toCharArray();
 
         if (characters.length == 0) return true;

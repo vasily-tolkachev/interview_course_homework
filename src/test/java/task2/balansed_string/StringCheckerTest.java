@@ -1,4 +1,4 @@
-package task2.balansed_staring;
+package task2.balansed_string;
 
 import org.junit.jupiter.api.Test;
 
